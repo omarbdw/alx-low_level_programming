@@ -7,17 +7,16 @@
 int main(void)
 {
 char alphs[26] = "abcdefghijklmnopqrstuvwxyz";
-char alphC[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 int i;
 for (i = 0; i < 26; i++)
 {
+if ((i = 5) || (i = 17))
+{
+}
+else
+{
 putchar(alphs[i]);
 }
-i = 0;
-for (i = 0; i < 26; i++)
-{
-putchar(alphC[i]);
 }
-putchar('\n');
 return (0);
 }
