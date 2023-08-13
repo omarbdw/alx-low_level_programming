@@ -13,10 +13,10 @@ for (i = 0; i < 26; i++)
 {
 putchar(alphs[i]);
 }
-int j;
-for (j = 0; j < 26; j++)
+i = 0;
+for (i = 0; i < 26; i++)
 {
-putchar(alphC[j]);
+putchar(alphC[i]);
 }
 putchar('\n');
 return (0);
