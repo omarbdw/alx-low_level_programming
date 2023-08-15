@@ -11,8 +11,10 @@ int i = 10;
 while (i != 0)
 {
 for (letter = 'a'; letter <= 'z'; letter++)
-_putchar(letter);
- _putchar('\n');
-i--;
+{
+  _putchar(letter);
 }
+ i--;
+_putchar('\n');
+ }
 }
