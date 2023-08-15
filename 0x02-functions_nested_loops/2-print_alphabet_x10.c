@@ -12,9 +12,9 @@ while (i != 0)
 {
 for (letter = 'a'; letter <= 'z'; letter++)
 {
-  _putchar(letter);
+ _putchar(letter);
 }
- i--;
+i--;
 _putchar('\n');
- }
+}
 }
