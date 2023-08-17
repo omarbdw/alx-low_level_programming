@@ -1,10 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - checks for uppercase character
- * Returns 1 if c is uppercase
- * Returns 0 otherwise
+ * _isupper - uppercase letters
+ * @c: char to check
+ *
+ * Return: 0 or 1
  */
+
 int _isupper(int c)
 {
 scanf("%d", &c);
