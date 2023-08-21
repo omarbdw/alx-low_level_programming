@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * _strlen - counts how many characters in a string
+ * @main: _strlen - counts how many characters in a string
  * @s: string input
+ * @Return: len
  */
 int _strlen(char *s)
 {
