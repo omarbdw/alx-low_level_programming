@@ -2,7 +2,7 @@
 /**
  * _strlen - counts how many characters in a string
  * @s: string input
- * @Return: len
+ * Return: len
  */
 int _strlen(char *s)
 {
