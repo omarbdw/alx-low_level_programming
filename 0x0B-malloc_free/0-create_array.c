@@ -3,6 +3,8 @@
  * and initializes it with a specific char
  * @size: size of the array
  * @c: intializing character
+ * Description: create array of size size and assign char c
+ * Return: pointer to array, NULL if fail
  */
 #include "main.h"
 #include <stdlib.h>
