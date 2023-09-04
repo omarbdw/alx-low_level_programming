@@ -1,0 +1,32 @@
+#include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
+/**
+ * strdup -  returns a pointer to a newly allocated space in memory
+ * @*str: string
+ * Return: NULL if str = NULL
+ * On success, the _strdup function returns a pointer to the duplicated string
+ * It returns NULL if insufficient memory was available
+ */
+char *_strdup(char *str){
+int i = 0;
+int length = 0;
+char *ptr;
+if (str == NULL)
+{
+return (NULL);
+}
+for (i = 0; str[i] != '\0'; i++)
+{
+length++;
+i++;
+}
+length++;
+ptr = malloc(sizeof(char) * length);
+if (ptr == NULL)
+return (NULL);
+for (i =0; str[0]; i++)
+ptr[i] = str[i];
+return (ptr);
+free(ptr);
+}
