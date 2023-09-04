@@ -14,15 +14,18 @@ int i = 0;
 int j = 0;
 char *resultString;
  if (s1 == NULL)
-   return (NULL);
+   s1 = "";
  if (s2 == NULL)
-   return (NULL);
+   s2 = "";
  while (s1[i] != '\0')
 i++;
 while (s2[j] != '\0')
 j++;
 resultString = malloc(sizeof(char) * (i + j + 1));
+ if (resultString = NULL)
+   return (NULL);
  i = 0;
+ j = 0;
 
 while (s1[i] != '0')
 {
