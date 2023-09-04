@@ -22,7 +22,7 @@ i++;
 while (s2[j] != '\0')
 j++;
 resultString = malloc(sizeof(char) * (i + j + 1));
- if (resultString = NULL)
+ if (resultString == NULL)
    return (NULL);
  i = 0;
  j = 0;
