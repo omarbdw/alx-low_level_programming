@@ -1,0 +1,58 @@
+/**
+ * argstostr - main entry
+ * @ac: int input
+ * @av: double pointer array
+ * Return: 0
+ */
+
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+char *argstostr(int ac, char **av)
+{
+
+    /* Intializing variables */
+int i, n, allChar = 0, j = 0;
+
+    /*// define a new pointer to contain all characters*/
+char *str;
+
+    /*/ NULL check*/
+if (ac == 0 || av == NULL)
+return (NULL);
+
+    /*// calculate how many characters*/
+for (n = 0; n < ac; n++)
+{
+for (i = 0; av[n][i]; i++)
+allChar++;
+}
+
+    /*// Adding spaces to all characters*/
+allChar = allChar + ac;
+
+    /*// allocate required memory*/
+str = malloc(sizeof(char) * allChar + 1);
+
+    /*// Memory check*/
+if (str == NULL)
+return (NULL);
+
+    /*// concatenate all characters in defined pointer*/
+for (n = 0; n < ac; n++)
+{
+for (i = 0; av[n][i]; i++)
+{
+str[j] = av[n][i];
+j++;
+}
+if (str[j] == '\0')
+{
+str[j++] = '\n';
+}
+}
+
+    /* // return new pointer*/
+
+return (str);
+}
