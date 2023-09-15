@@ -7,7 +7,6 @@
  * @separator: sign between words
  * @n: number of arguments
  * @...: A variable number of numbers to be printed
- * Return: nothing
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -16,7 +15,7 @@ unsigned int i;
 va_start(args, n);
 for (i = 0; i < n; i++)
 {
-printf("%d", va_arg(args, unsigned int));
+printf("%d", va_arg(args, int));
 if (i != (n - 1) || separator == NULL)
 printf("%s", separator);
 }
