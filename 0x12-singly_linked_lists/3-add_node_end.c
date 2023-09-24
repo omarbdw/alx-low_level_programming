@@ -22,21 +22,21 @@ return (NULL);
 while (str[len])
 len++;
 
-new_node->str = strdup(str);
-new_node->len = len;
-new_node->next = NULL;
+new_node->str = strdup(str); /* string duplication */
+new_node->len = len; /* length of string */
+new_node->next = NULL; /* new node always points to NULL */
 
-if (*head == NULL)
+if (*head == NULL) /* if list is empty, new node becomes head */
 {
-*head = new_node;
-return (*head);
+*head = new_node; /* dereference head to assign new node */
+return (*head); /* return address of new node */
 }
 
-temp = *head;
-while (temp->next != NULL)
-temp = temp->next;
+temp = *head; /* assign temp to head to traverse list */
+while (temp->next != NULL) /* traverse list until last node */
+temp = temp->next; /* assign temp to next node */
 
-temp->next = new_node;
+temp->next = new_node; /* last node points to new node */
 
 return (new_node);
 }
