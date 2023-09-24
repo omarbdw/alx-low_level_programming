@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <string.h>
-/* 
+/*
 * add_node - adds a new node at the beginning of a list_t list
     * @head: pointer to the head of the list
     * @str: string to be added to the list
@@ -16,9 +16,10 @@ new_node = malloc(sizeof(list_t)); /* allocate memory for the new node */
 if (new_node == NULL) /* validate memory allocation */
 return (NULL); /* return NULL if malloc fails */
 new_node->str = strdup(str); /* copy the string into the new node */
-for (i = 0; str[i] != '\0'; i++); /* count the number of characters */
+for (i = 0; str[i] != '\0'; i++)
+; /* count the number of characters */
 new_node->len = i; /* i is the number of characters */
 new_node->next = *head; /* the new node points to the old head */
 *head = new_node; /* the new node is now the head */
 return (new_node); /* return the new node */
-} 
+}
