@@ -6,13 +6,11 @@
  */
 void free_listint(listint_t *head)
 {
-listint_t *temp;
-temp = malloc(sizeof(listint_t));
-while (temp->next != NULL)
+listint_t *temp = head;
+while (temp != NULL)
 {
 temp->next = head->next;
 free(head);
 head = temp;
 }
-free(temp);
 }
