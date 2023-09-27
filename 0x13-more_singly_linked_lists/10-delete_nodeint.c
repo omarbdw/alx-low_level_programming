@@ -15,9 +15,10 @@ if (*head == NULL)
 return (-1);
 if (index == 0)
 {
-*head = current->next;
+*head = (*head)->next;
 free(current);
 current = NULL;
+return (1);
 }
 while (position < (index - 1))
 {
