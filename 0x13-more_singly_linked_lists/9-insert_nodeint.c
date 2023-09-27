@@ -20,7 +20,7 @@ return (NULL);
 node->n = n;
 node->next = NULL;
 
-temp = *head;
+temp = head;
 while (temp)
 {
 if (idx == 0)
