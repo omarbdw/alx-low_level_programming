@@ -18,6 +18,7 @@ node = malloc(sizeof(listint_t));
 if (node == NULL || head == NULL)
 return (NULL);
 node->n = n;
+node->next = NULL;
 
 temp = *head;
 while (temp)
