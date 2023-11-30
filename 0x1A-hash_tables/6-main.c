@@ -5,7 +5,6 @@
 
 /**
  * main - check the code
- *
  * Return: Always EXIT_SUCCESS.
  */
 int main(void)
@@ -13,7 +12,6 @@ int main(void)
 hash_table_t *ht;
 char *key;
 char *value;
-
 ht = hash_table_create(1024);
 hash_table_set(ht, "c", "fun");
 hash_table_set(ht, "python", "awesome");
